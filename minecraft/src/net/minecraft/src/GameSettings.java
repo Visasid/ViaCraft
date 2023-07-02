@@ -46,6 +46,7 @@ public class GameSettings {
 	public boolean field_22275_C = false;
 	public boolean smoothCamera = false;
 	public boolean field_22273_E = false;
+	public float fovSetting = 0.0F;
 	public float field_22272_F = 1.0F;
 	public float field_22271_G = 1.0F;
 	public int guiScale = 0;
@@ -86,6 +87,10 @@ public class GameSettings {
 
 		if(var1 == EnumOptions.SENSITIVITY) {
 			this.mouseSensitivity = var2;
+		}
+
+		if(var1 == EnumOptions.FOV) {
+			this.fovSetting = var2;
 		}
 
 	}
@@ -139,7 +144,7 @@ public class GameSettings {
 	}
 
 	public float getOptionFloatValue(EnumOptions var1) {
-		return var1 == EnumOptions.MUSIC ? this.musicVolume : (var1 == EnumOptions.SOUND ? this.soundVolume : (var1 == EnumOptions.SENSITIVITY ? this.mouseSensitivity : 0.0F));
+		return var1 == EnumOptions.FOV ? this.fovSetting : (var1 == EnumOptions.MUSIC ? this.musicVolume : (var1 == EnumOptions.SOUND ? this.soundVolume : (var1 == EnumOptions.SENSITIVITY ? this.mouseSensitivity : 0.0F)));
 	}
 
 	public boolean getOptionOrdinalValue(EnumOptions var1) {

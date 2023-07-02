@@ -6,7 +6,7 @@ public enum EnumOptions {
 	INVERT_MOUSE("options.invertMouse", false, true),
 	SENSITIVITY("options.sensitivity", true, false),
 	RENDER_DISTANCE("options.renderDistance", false, false),
-	FOV("options.fov", true, false),
+	FOV("options.fov", true, false), 
 	VIEW_BOBBING("options.viewBobbing", false, true),
 	ANAGLYPH("options.anaglyph", false, true),
 	ADVANCED_OPENGL("options.advancedOpengl", false, true),
