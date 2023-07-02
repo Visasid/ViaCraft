@@ -23,7 +23,7 @@
 	</linkedResources>
 	<filteredResources>
 		<filter>
-			<id>3828830606979996980</id>
+			<id>7947064323679591834</id>
 			<name></name>
 			<type>9</type>
 			<matcher>
@@ -32,7 +32,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>3828830606979996981</id>
+			<id>7947064323679591835</id>
 			<name></name>
 			<type>9</type>
 			<matcher>
@@ -41,21 +41,12 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>3828830606979996982</id>
+			<id>7947064323679591836</id>
 			<name></name>
 			<type>9</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
 				<arguments>1.0-name-matches-false-false-source</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1688296018805</id>
-			<name></name>
-			<type>30</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

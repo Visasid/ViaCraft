@@ -644,7 +644,7 @@ net/minecraft/src/Timer 6f246746bbf760a807372b3656ac887c
 net/minecraft/src/UnexpectedThrowable 9dfe6a4956d490f3d3a7ba44a92a8d47
 net/minecraft/src/Vec3D 0173371e56ca3b9e51b6e0d53747e7f0
 net/minecraft/src/WatchableObject 036850968f648249bf19a5b7e599038d
-net/minecraft/src/World 5c5301357a2c0635909056c51ad91eb5
+net/minecraft/src/World 3c0e1817a3a4bd1f9ee8be0875526cd8
 net/minecraft/src/WorldBlockPositionType 31e0b084c3eecd5a747a951858b3e195
 net/minecraft/src/WorldChunkManager 94010a65598fe7fe86134bd53a348d1e
 net/minecraft/src/WorldChunkManagerHell 862470457cb6e3d72222e6257a42a8fe

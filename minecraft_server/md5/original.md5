@@ -410,7 +410,7 @@ net/minecraft/src/TileEntityRecordPlayer be3cd0e2fdafcb4c3d33b956f2d94bc0
 net/minecraft/src/TileEntitySign 6dee393edf9aadd9073d59d5ecfa3b89
 net/minecraft/src/Vec3D 46064be3594c7254be51b9b190e8176c
 net/minecraft/src/WatchableObject 3add3b1d3bbb4178de0d1a577204903b
-net/minecraft/src/World b255664662729372cc5a7486fef1a0e7
+net/minecraft/src/World 6f128c85474fb650dd2b2352ba254978
 net/minecraft/src/WorldChunkManager ab646383d78122d6b88dc882fcd1467a
 net/minecraft/src/WorldChunkManagerHell 6c8ee8367420537c610886e67b6516fb
 net/minecraft/src/WorldGenBigTree c2bd9a46e1d339bd93c69effc90df832

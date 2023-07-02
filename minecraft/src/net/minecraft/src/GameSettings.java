@@ -42,7 +42,6 @@ public class GameSettings {
 	public boolean hideGUI = false;
 	public boolean thirdPersonView = false;
 	public boolean showDebugInfo = false;
-	public float fovSetting = 0.0F;
 	public String lastServer = "";
 	public boolean field_22275_C = false;
 	public boolean smoothCamera = false;
@@ -83,10 +82,6 @@ public class GameSettings {
 		if(var1 == EnumOptions.SOUND) {
 			this.soundVolume = var2;
 			this.mc.sndManager.onSoundOptionsChanged();
-		}
-
-		if(var1 == EnumOptions.FOV) {
-			this.fovSetting = var2;
 		}
 
 		if(var1 == EnumOptions.SENSITIVITY) {
@@ -144,7 +139,7 @@ public class GameSettings {
 	}
 
 	public float getOptionFloatValue(EnumOptions var1) {
-		return var1 == EnumOptions.FOV ? this.fovSetting : (var1 == EnumOptions.MUSIC ? this.musicVolume : (var1 == EnumOptions.SOUND ? this.soundVolume : (var1 == EnumOptions.SENSITIVITY ? this.mouseSensitivity : 0.0F)));
+		return var1 == EnumOptions.MUSIC ? this.musicVolume : (var1 == EnumOptions.SOUND ? this.soundVolume : (var1 == EnumOptions.SENSITIVITY ? this.mouseSensitivity : 0.0F));
 	}
 
 	public boolean getOptionOrdinalValue(EnumOptions var1) {
@@ -169,7 +164,7 @@ public class GameSettings {
 		String var3 = var2.translateKey(var1.getEnumString()) + ": ";
 		if(var1.getEnumFloat()) {
 			float var5 = this.getOptionFloatValue(var1);
-			return var1 == EnumOptions.SENSITIVITY ? (var5 == 0.0F ? var3 + var2.translateKey("options.sensitivity.min") : (var5 == 1.0F ? var3 + var2.translateKey("options.sensitivity.max") : var3 + (int)(var5 * 200.0F) + "%"));
+			return var1 == EnumOptions.SENSITIVITY ? (var5 == 0.0F ? var3 + var2.translateKey("options.sensitivity.min") : (var5 == 1.0F ? var3 + var2.translateKey("options.sensitivity.max") : var3 + (int)(var5 * 200.0F) + "%")) : (var5 == 0.0F ? var3 + var2.translateKey("options.off") : var3 + (int)(var5 * 100.0F) + "%");
 		} else if(var1.getEnumBoolean()) {
 			boolean var4 = this.getOptionOrdinalValue(var1);
 			return var4 ? var3 + var2.translateKey("options.on") : var3 + var2.translateKey("options.off");
@@ -202,10 +197,6 @@ public class GameSettings {
 
 					if(var3[0].equals("sound")) {
 						this.soundVolume = this.parseFloat(var3[1]);
-					}
-
-					if(var3[0].equals("fov")) {
-						this.fovSetting = this.parseFloat(var3[1]);
 					}
 
 					if(var3[0].equals("mouseSensitivity")) {
@@ -289,7 +280,6 @@ public class GameSettings {
 			var1.println("mouseSensitivity:" + this.mouseSensitivity);
 			var1.println("viewDistance:" + this.renderDistance);
 			var1.println("guiScale:" + this.guiScale);
-			var1.println("fov:" + this.fovSetting);
 			var1.println("bobView:" + this.viewBobbing);
 			var1.println("anaglyph3d:" + this.anaglyph);
 			var1.println("advancedOpengl:" + this.advancedOpengl);

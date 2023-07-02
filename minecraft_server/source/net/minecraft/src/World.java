@@ -1430,17 +1430,17 @@ public class World implements IBlockAccess {
 			++field_4268_y;
 
 			try {
-				if(field_4268_y == 50) {
-					return;
-				}
+				if(field_4268_y != 50) {
+					int var9 = (var5 + var2) / 2;
+					int var10 = (var7 + var4) / 2;
+					if(!this.blockExists(var9, 64, var10)) {
+						return;
+					}
 
-				int var9 = (var5 + var2) / 2;
-				int var10 = (var7 + var4) / 2;
-				if(!this.blockExists(var9, 64, var10)) {
-					return;
-				}
+					if(this.getChunkFromBlockCoords(var9, var10).func_21101_g()) {
+						return;
+					}
 
-				if(!this.getChunkFromBlockCoords(var9, var10).func_21101_g()) {
 					int var11 = this.field_821_y.size();
 					int var12;
 					if(var8) {
